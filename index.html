@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gujjar Community Heritage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Plus Jakarta Sans", sans-serif;
+      }
+      .scroll_thin {
+        scrollbar-width: thin;
+      }
+      .page {
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+        transform-origin: left center;
+      }
+      #pagination button.active {
+        background-color: #000;
+      }
+      body {
+        background-color: #f0f0f0;
+        color: #333;
+      }
+      .green-bg {
+        background-color: #006600; /* Pakistan Green */
+      }
+      .white-bg {
+        background-color: #fff;
+      }
+      .crescent {
+        background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Flag_of_Pakistan.svg/800px-Flag_of_Pakistan.svg.png")
+          no-repeat center center;
+        background-size: 50px 50px;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        margin: 10px;
+      }
+      .star {
+        color: white;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 10px;
+      }
+      .text-green {
+        color: #006600;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="min-h-screen w-full flex justify-center items-center px-4 sm:px-0 parent"
+    >
+      <div
+        class="w-full max-w-[360px] h-[520px] sm:h-[540px] mx-auto relative [perspective:1500px]"
+        id="book"
+      >
+        <!-- Cover -->
+        <div
+          class="page absolute inset-0 p-6 rounded-2xl green-bg text-white flex flex-col justify-center items-center text-center cursor-pointer"
+          id="cover"
+        >
+          <h1 class="text-2xl sm:text-3xl font-semibold tracking-wide">
+            Gujjar Community Heritage
+          </h1>
+          <p class="mt-2 text-sm sm:text-base">Scroll to explore</p>
+          <div class="crescent"></div>
+        </div>
+
+        <!-- Page 1 -->
+        <div
+          class="page absolute inset-0 p-4 sm:p-6 rounded-2xl white-bg shadow-2xl cursor-pointer !pl-8"
+          id="page1"
+        >
+          <h2
+            class="text-lg sm:text-xl font-semibold border-b border-gray-300 pb-2 mb-4 text-green-600"
+          >
+            Introduction to Gujjars
+          </h2>
+          <ul class="space-y-5 text-sm">
+            <li class="flex justify-between pb-1">
+              The Gujjar tribe is one of the largest pastoral communities in
+              South Asia, primarily found in northern India, Pakistan, and parts
+              of Afghanistan.
+            </li>
+            <li class="flex justify-between pb-1">
+              The community is renowned for its deep historical roots and
+              significant contribution to the regions they inhabit.
+            </li>
+            <li class="flex justify-between pb-1">
+              The Gujjars are known for their strong cultural values,
+              traditional music, dance, and religious practices.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Page 6: Video Embed -->
+        <div
+          class="page absolute inset-0 p-4 sm:p-6 rounded-2xl white-bg shadow-2xl cursor-pointer !pl-8"
+          id="page6"
+        >
+          <h2
+            class="text-lg sm:text-xl font-semibold border-b border-gray-300 pb-2 mb-4 text-green-600"
+          >
+            Gujjar Community Video
+          </h2>
+          <div class="h-[90%]">
+            <!-- Video Embed -->
+            <video class="w-full h-full" controls>
+              <source
+                src="https://res.cloudinary.com/dje7ukgcq/video/upload/v1754842662/Random%20Videos/gujjarofficial001_7177337355693591835_x6xtib.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+
+        <!-- Page 2 -->
+        <div
+          class="page absolute inset-0 p-4 sm:p-6 rounded-2xl white-bg shadow-2xl cursor-pointer !pl-8"
+          id="page2"
+        >
+          <h2
+            class="text-lg sm:text-xl font-semibold border-b border-gray-300 pb-2 mb-4 text-green-600"
+          >
+            Gujjar's Role in the Creation of Pakistan (14th August 1947)
+          </h2>
+          <div class="overflow-auto scroll_thin h-[80%]">
+            <ul class="space-y-5 text-sm">
+              <li class="flex justify-between pb-1">
+                The Gujjar community played a pivotal role in the movement for
+                the creation of Pakistan, supporting the vision of a separate
+                nation for Muslims in South Asia.
+              </li>
+              <li class="flex justify-between pb-1">
+                Many Gujjars actively participated in the Pakistan Movement,
+                contributing both militarily and through political activism,
+                alongside prominent leaders such as Quaid-e-Azam Muhammad Ali
+                Jinnah.
+              </li>
+              <li class="flex justify-between pb-1">
+                They were instrumental in organizing mass protests and rallies,
+                especially in the Punjab region, which helped galvanize support
+                for the partition.
+              </li>
+              <li class="flex justify-between pb-1">
+                Gujjar leaders held significant roles in local politics and
+                supported the efforts of the Muslim League, which played a key
+                role in the creation of Pakistan.
+              </li>
+              <li class="flex justify-between pb-1">
+                Their support for the cause was evident in their active
+                involvement in the leadership of different sectors, including
+                land and agriculture, which were critical to the economy of
+                newly-formed Pakistan.
+              </li>
+              <li class="flex justify-between pb-1">
+                During the partition of India in 1947, the Gujjar community
+                faced immense hardships. Despite these challenges, they stood
+                strong in the face of adversity and continued to support the
+                ideals of Pakistan.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Page 3 -->
+        <div
+          class="page absolute inset-0 p-4 sm:p-6 rounded-2xl white-bg shadow-2xl cursor-pointer !pl-8"
+          id="page3"
+        >
+          <h2
+            class="text-lg sm:text-xl font-semibold border-b border-gray-300 pb-2 mb-4 text-green-600"
+          >
+            Cultural Contributions Post-Independence
+          </h2>
+          <ul class="space-y-5 text-sm">
+            <li class="flex justify-between pb-1">
+              Following the creation of Pakistan, the Gujjar community continued
+              to contribute significantly to the country’s development,
+              especially in agriculture, education, and social reforms.
+            </li>
+            <li class="flex justify-between pb-1">
+              The community’s role in post-independence Pakistan extended to
+              both urban and rural development, as they helped in rebuilding
+              their communities and fostering cultural integration.
+            </li>
+            <li class="flex justify-between pb-1">
+              Gujjars are known for their hospitality and are integral to the
+              social fabric of Pakistani society. They continue to maintain
+              strong bonds with their ancestral traditions while embracing
+              modern advancements.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Page 4 -->
+        <div
+          class="page absolute inset-0 p-4 sm:p-6 rounded-2xl white-bg shadow-2xl cursor-pointer !pl-8"
+          id="page4"
+        >
+          <h2
+            class="text-lg sm:text-xl font-semibold border-b border-gray-300 pb-2 mb-4 text-green-600"
+          >
+            Gujjar Influence in Politics
+          </h2>
+          <ul class="space-y-5 text-sm">
+            <li class="flex justify-between pb-1">
+              Gujjars have long been influential in local and national politics
+              in Pakistan. Their strong leadership, particularly in Punjab, has
+              had a lasting impact on governance and policy making.
+            </li>
+            <li class="flex justify-between pb-1">
+              Several Gujjar leaders have risen to prominence, holding key
+              political positions in the provincial and federal governments.
+              They have played crucial roles in the democratic processes and
+              public policy.
+            </li>
+            <li class="flex justify-between pb-1">
+              Their participation in political activities has ensured the
+              community’s voice is heard in the corridors of power, shaping
+              decisions that impact Pakistan’s political landscape.
+            </li>
+            <li class="flex justify-between pb-1">
+              The Gujjar community’s political influence is tied to their
+              organizational skills, community solidarity, and commitment to the
+              country’s progress.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Page 5 -->
+        <div
+          class="page absolute inset-0 p-4 sm:p-6 rounded-2xl white-bg shadow-2xl cursor-pointer !pl-8"
+          id="page5"
+        >
+          <h2
+            class="text-lg sm:text-xl font-semibold border-b border-gray-300 pb-2 mb-4 text-green-600"
+          >
+            Modern-Day Gujjar Contributions
+          </h2>
+          <ul class="space-y-5 text-sm">
+            <li class="flex justify-between pb-1">
+              In today’s Pakistan, the Gujjar community continues to contribute
+              to the country’s development in various fields, including
+              agriculture, education, sports, and the arts.
+            </li>
+            <li class="flex justify-between pb-1">
+              They have embraced modern education, with an increasing number of
+              Gujjars pursuing higher education and excelling in professions
+              such as engineering, medicine, law, and business.
+            </li>
+            <li class="flex justify-between pb-1">
+              Gujjars have also made their mark in Pakistan’s cultural
+              landscape, with renowned musicians, poets, and artists hailing
+              from the community.
+            </li>
+            <li class="flex justify-between pb-1">
+              Today, they continue to maintain their rich cultural heritage
+              while adapting to the changing world, contributing to the social,
+              economic, and cultural progress of Pakistan.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Back Cover -->
+        <div
+          class="page absolute inset-0 p-6 rounded-2xl green-bg text-white flex flex-col justify-center items-center text-center cursor-pointer"
+          id="back"
+        >
+          <h2 class="text-2xl font-semibold mb-2">Thank You!</h2>
+          <p class="text-sm">Embrace our heritage</p>
+          <div class="star">★</div>
+        </div>
+
+        <!-- Pagination -->
+        <div
+          class="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-50 flex space-x-2 bg-white bg-opacity-90 p-2 rounded-lg shadow-md"
+          id="pagination"
+        ></div>
+      </div>
+    </div>
+
+    <!-- Flip Sound -->
+    <audio
+      id="flipSound"
+      src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_9fd8e50d44.mp3"
+      preload="auto"
+    ></audio>
+
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
+
+    <!-- Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
+        const pages = document.querySelectorAll(".page");
+        const sound = document.getElementById("flipSound");
+        const pagination = document.getElementById("pagination");
+
+        let currentPage = 0;
+        let scrollTriggerInstance;
+
+        pages.forEach((page, index) => {
+          page.style.zIndex = pages.length - index;
+          gsap.set(page, { transformOrigin: "left center", rotationY: 0 });
+
+          const dot = document.createElement("button");
+          dot.className =
+            "w-3 h-3 rounded-full bg-gray-400 hover:bg-gray-600 focus:outline-none";
+
+          dot.addEventListener("click", () => {
+            pages.forEach((_, i) => {
+              flipPage(i, i <= index);
+            });
+
+            updatePagination(index);
+            currentPage = index;
+
+            if (scrollTriggerInstance) scrollTriggerInstance.revert();
+            scrollTriggerInstance = createScrollTrigger(currentPage);
+            ScrollTrigger.refresh();
+
+            const totalPages = pages.length - 1;
+            const scrollStart = scrollTriggerInstance.start;
+            const scrollEnd = scrollTriggerInstance.end;
+            const scrollTo =
+              scrollStart + (scrollEnd - scrollStart) * (index / totalPages);
+
+            gsap.to(window, {
+              scrollTo: scrollTo,
+              duration: 1,
+              ease: "power2.inOut",
+            });
+          });
+
+          pagination.appendChild(dot);
+        });
+
+        function flipPage(index, forward = true) {
+          const page = pages[index];
+          const rotateY = forward ? -80 : 0;
+          gsap.to(page, {
+            duration: 2,
+            rotationY: rotateY,
+            ease: "power2.inOut",
+          });
+          sound.currentTime = 0;
+          sound.play();
+        }
+
+        function updatePagination(activeIndex) {
+          const dots = pagination.querySelectorAll("button");
+          dots.forEach((dot, idx) => {
+            dot.classList.toggle("active", idx === activeIndex);
+          });
+        }
+
+        function createScrollTrigger(startPage = 0) {
+          return ScrollTrigger.create({
+            id: "menuTrigger",
+            trigger: ".parent",
+            start: "top top",
+            end: `+=${pages.length * 1000}`,
+            pin: true,
+            scrub: 2,
+            onUpdate: (self) => {
+              const totalPages = pages.length - 1;
+              const progress = self.progress;
+              const targetIndex = Math.min(
+                Math.floor(progress * totalPages + 0.3),
+                totalPages
+              );
+
+              if (targetIndex > currentPage) {
+                for (let i = currentPage; i < targetIndex; i++) {
+                  flipPage(i, true);
+                }
+              } else if (targetIndex < currentPage) {
+                for (let i = currentPage - 1; i >= targetIndex; i--) {
+                  flipPage(i, false);
+                }
+              }
+
+              currentPage = targetIndex;
+              updatePagination(currentPage);
+            },
+          });
+        }
+
+        scrollTriggerInstance = createScrollTrigger();
+      });
+    </script>
+  </body>
+</html>
